@@ -1,0 +1,96 @@
+html {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 1000px;
+  background-image: linear-gradient(to right top, rgb(247, 129, 149), rgb(248, 185, 68), white);
+}
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+.signup {
+  width: 100%;
+  max-width: 475px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 25px;
+  &-heading {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #202020;
+  }
+  &-text {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &-link {
+    color: rgb(57, 57, 219);
+    &-none {
+        text-decoration: none;
+        color: rgb(57, 57, 219);
+    }
+  }
+  &-group {
+    margin-bottom: 25px;
+  }
+  &-group-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  &-input {
+    color: #202020;
+    padding: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #eee;
+    font-size: 16;
+    font-weight: 500;
+    background-color: #eee;
+    transition: 0.2s linear;
+    width: 100%;
+  }
+  &-input::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 300;
+  }
+  &-input:focus {
+    border-color: #eee;
+    background-color: white;
+  }
+  &-submit {
+    color: white;
+    width: 100%;
+    background-color: rgb(57, 57, 219);
+    font-size: 18px;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    margin-right: auto;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  &-su {
+    margin: 0 auto;
+  }
+  &-agree {
+      color: #999;
+     font-size: 14px;
+  }
+}
+.signup-group-2 > .signup-input {
+  width: calc(50% - 5px);
+}
